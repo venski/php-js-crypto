@@ -610,7 +610,7 @@ function decodeaescontent(endata)
     var base64arr = endata.split('@')
     //var CryptoJS = require("crypto-js")
 // Mcrypt pads a short key with zero bytes
-    var key = CryptoJS.enc.Utf8.parse('encryptionkey123')
+    var key = CryptoJS.enc.Utf8.parse('0000111122223333')
     var iv = CryptoJS.enc.Base64.parse(base64arr[0])
 // Keep the ciphertext in Base64 form
     var ciphertext = base64arr[1]
